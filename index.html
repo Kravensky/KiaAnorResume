@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kristine (Kia) Anor | Admin, Customer Support &amp; Community Operations</title>
+<meta name="description" content="Kristine (Kia) Anor is an admin and customer support specialist offering remote services: customer support, community management, executive admin, recruitment and training, SOPs, technical support, and gaming buddy and game testing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Oxanium:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  color-scheme: light;
+  --bg:#FAF8FF; --bg2:#F1ECFF; --panel:#FFFFFF; --line:#D3C9F5; --soft:#E6DFFA;
+  --text:#1A1446; --muted:#565087; --cyan:#00787A; --violet:#6A4DFF; --pop:#C22A66;
+  --glow:rgba(0,120,122,.24); --btn-text:#FFFFFF; --navbg:rgba(250,248,255,.88);
+  --star-op:0; --wash:rgba(0,120,122,.10); --wash2:rgba(194,42,102,.08);
+  --display:'Oxanium','Segoe UI',system-ui,sans-serif;
+  --body:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#0C0A2B; --bg2:#120F3A; --panel:#181552; --line:#3B3597; --soft:#25216A;
+    --text:#F3F0FF; --muted:#B4AEE6; --cyan:#2EE6D6; --violet:#B59CFF; --pop:#FF7DB0;
+    --glow:rgba(46,230,214,.35); --btn-text:#06133A; --navbg:rgba(12,10,43,.86);
+    --star-op:.75; --wash:rgba(46,230,214,.12); --wash2:rgba(255,125,176,.10);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#0C0A2B; --bg2:#120F3A; --panel:#181552; --line:#3B3597; --soft:#25216A;
+  --text:#F3F0FF; --muted:#B4AEE6; --cyan:#2EE6D6; --violet:#B59CFF; --pop:#FF7DB0;
+  --glow:rgba(46,230,214,.35); --btn-text:#06133A; --navbg:rgba(12,10,43,.86);
+  --star-op:.75; --wash:rgba(46,230,214,.12); --wash2:rgba(255,125,176,.10);
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0}
+h1,h2,h3{font-family:var(--display);text-wrap:balance}
+p{text-wrap:pretty}
+a{color:inherit}
+ul,ol{padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--cyan);color:var(--btn-text);padding:.6rem 1rem;z-index:100}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.section{padding:clamp(64px,9vw,112px) 0}
+.h2{font-size:clamp(1.75rem,3.4vw,2.5rem);font-weight:600;line-height:1.12;margin-bottom:1rem}
+.sub{color:var(--muted);max-width:36em}
+.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 1.4rem;font:600 .95rem/1 var(--body);text-decoration:none;color:var(--btn-text);background:var(--cyan);border:0;cursor:pointer;
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);transition:filter .2s}
+.btn:hover{filter:brightness(1.12)}
+.btn:focus-visible{outline:2px solid var(--text);outline-offset:-5px}
+.link-u{color:var(--text);text-decoration:underline;text-decoration-color:var(--cyan);text-decoration-thickness:2px;text-underline-offset:5px;font-weight:500}
+.link-u:hover{color:var(--cyan)}
+
+/* ---------- Nav ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--navbg);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--soft)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:64px}
+.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;font:600 1.15rem/1 var(--display)}
+.brand-mark{width:26px;height:26px}
+.nav-links{display:flex;gap:1.75rem;font-size:.95rem}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.nav .btn{padding:.7rem 1.1rem;font-size:.9rem}
+@media (max-width:760px){.nav-links{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;padding:clamp(40px,7vw,84px) 0 clamp(56px,8vw,96px)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.75;
+  background-image:linear-gradient(var(--soft) 1px,transparent 1px),linear-gradient(90deg,var(--soft) 1px,transparent 1px);
+  background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(ellipse 65% 75% at 72% 45%,#000 0%,transparent 75%);
+  mask-image:radial-gradient(ellipse 65% 75% at 72% 45%,#000 0%,transparent 75%)}
+.stars{position:absolute;inset:0;opacity:var(--star-op);pointer-events:none}
+.stars i{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(32px,5vw,72px);align-items:center}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.2rem);font-weight:700;line-height:1.05;letter-spacing:-.01em;margin-bottom:1.25rem}
+.lede{color:var(--muted);font-size:1.1rem;max-width:34em}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;margin-top:2rem}
+.status{margin-top:2.25rem;padding-top:1.25rem;border-top:1px solid var(--soft);display:grid;gap:.4rem;font-size:.92rem;color:var(--muted)}
+.status li{display:flex;align-items:center;gap:.6rem}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--glow);flex:none}
+.clock{font-family:var(--mono);font-size:.85rem;color:var(--text)}
+
+/* Orbit */
+.orbit-wrap{position:relative;width:100%;max-width:540px;margin:0 auto}
+.orbit-wrap::before{content:"";position:absolute;left:50%;top:0;width:100%;aspect-ratio:1;transform:translateX(-50%);background:radial-gradient(circle at 32% 38%,var(--wash),transparent 55%),radial-gradient(circle at 70% 68%,var(--wash2),transparent 55%);pointer-events:none}
+.orbit{position:relative;width:100%;aspect-ratio:1}
+.orbit > svg.rings{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.rings circle,.rings line{fill:none;stroke:var(--line);stroke-width:.25}
+.r-ticks{stroke-width:1.2!important;stroke-dasharray:.25 1.75;transform-origin:50px 50px;animation:spin 240s linear infinite}
+.r-dash{stroke:var(--violet)!important;stroke-dasharray:.6 1.6;opacity:.7;transform-origin:50px 50px;animation:spin 160s linear infinite reverse}
+.rings .link{stroke:var(--soft)}
+.rings .link.on{stroke:var(--cyan);stroke-width:.35;stroke-dasharray:1 1.2;animation:flow 1.4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes flow{to{stroke-dashoffset:-2.2}}
+.core{position:absolute;left:50%;top:50%;width:21%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;display:grid;place-items:center;
+  background:var(--panel);border:1px solid var(--cyan);font:700 clamp(1.15rem,3.4vw,1.7rem)/1 var(--display);letter-spacing:.02em;
+  box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--line),0 0 42px var(--glow)}
+.node{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:.45rem;
+  padding:5px 13px 5px 5px;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;
+  font:500 .8rem/1 var(--body);white-space:nowrap;cursor:pointer;
+  animation:nodeIn .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(.45s + var(--i) * .12s);transition:border-color .2s,box-shadow .2s}
+.node .ico{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--nc,var(--cyan))}
+.node:nth-of-type(3n+2){--nc:var(--pop)}
+.node:nth-of-type(3n){--nc:var(--violet)}
+.node:nth-of-type(7){--nc:var(--pop)}
+.node .ico .i{width:15px;height:15px}
+.node:hover{border-color:var(--nc,var(--cyan))}
+.node[aria-pressed="true"]{border-color:var(--nc,var(--cyan));box-shadow:0 0 0 1px var(--nc,var(--cyan)),0 0 22px color-mix(in srgb,var(--nc,var(--cyan)) 45%,transparent)}
+@keyframes nodeIn{from{opacity:0;scale:.7}to{opacity:1;scale:1}}
+@media (max-width:520px){.node{font-size:.72rem;padding-right:10px;gap:.35rem}.node .ico{width:22px;height:22px}.node .ico .i{width:13px;height:13px}}
+
+.readout,.contact-card{position:relative;border:1px solid var(--line);background:var(--panel)}
+.readout::before,.contact-card::before,.readout::after,.contact-card::after{content:"";position:absolute;width:14px;height:14px;border:2px solid var(--cyan)}
+.readout::before,.contact-card::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.readout::after,.contact-card::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.readout{margin-top:clamp(16px,3vw,28px);padding:1.3rem 1.5rem;min-height:12.5rem}
+.readout h3{font-size:1.25rem;font-weight:600;margin-bottom:.5rem}
+.readout .ro-desc{color:var(--muted);font-size:.95rem}
+.readout .ro-proof{margin-top:.85rem;padding-left:.8rem;border-left:2px solid var(--cyan);font-size:.92rem}
+.readout .ro-more{display:inline-block;margin-top:.85rem;font-size:.9rem}
+
+/* ---------- Proof strip ---------- */
+.proof{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:1.9rem 1.5rem;border-left:1px solid var(--soft)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font:700 clamp(1.9rem,4vw,2.8rem)/1 var(--display);margin-bottom:.6rem}
+.stat p{color:var(--muted);font-size:.93rem}
+.stat:nth-child(1) b,.stat:nth-child(4) b{color:var(--cyan)}
+.stat:nth-child(2) b{color:var(--pop)}
+.stat:nth-child(3) b{color:var(--violet)}
+@media (max-width:820px){
+  .proof-grid{grid-template-columns:1fr 1fr}
+  .stat:nth-child(odd){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--soft)}
+}
+
+/* ---------- Services ---------- */
+.split{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.7fr);gap:clamp(32px,6vw,88px);align-items:start}
+.split-head{position:sticky;top:calc(env(safe-area-inset-top,0px) + 100px)}
+.split-head .btn{margin-top:1.75rem}
+@media (max-width:900px){.split{grid-template-columns:1fr}.split-head{position:static}}
+.svc:nth-child(3n+2){--sc:var(--pop)}
+.svc:nth-child(3n){--sc:var(--violet)}
+.svc:nth-child(7){--sc:var(--pop)}
+.svc{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);gap:1.15rem;padding:1.9rem 0 1.9rem 1.1rem;border-top:1px solid var(--line)}
+.svc:last-child{border-bottom:1px solid var(--line)}
+.svc::before{content:"";position:absolute;left:0;top:-1px;width:2px;height:0;background:var(--sc,var(--cyan));transition:height .3s}
+.svc:hover::before,.svc:focus-within::before,.svc:target::before{height:calc(100% + 1px)}
+.svc .ico{width:44px;height:44px;border:1px solid var(--line);border-radius:6px;display:grid;place-items:center;color:var(--sc,var(--cyan))}
+.svc .ico .i{width:22px;height:22px}
+.svc h3{font-size:1.3rem;font-weight:600;margin-bottom:.55rem}
+.svc .desc{color:var(--muted);max-width:58ch}
+.svc .proof-line{margin-top:.95rem;padding-left:.8rem;border-left:2px solid var(--sc,var(--cyan));font-size:.95rem;max-width:58ch}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.svc .sub-label{margin-top:1.15rem;font-size:.85rem;font-weight:500;color:var(--muted)}
+.svc .sub-label + .chips{margin-top:.5rem}
+.svc .note{margin-top:.8rem;font-size:.92rem;color:var(--muted)}
+.chips li{font:400 .75rem/1 var(--mono);padding:.42rem .6rem;border:1px solid var(--soft);border-radius:3px;color:var(--muted)}
+
+/* ---------- Process ---------- */
+.process{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0 2rem;margin-top:3rem}
+.step{position:relative;padding-top:1.6rem;border-top:1px solid var(--line)}
+.step::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--sc,var(--cyan));box-shadow:0 0 12px var(--glow)}
+.step:nth-child(2){--sc:var(--pop)}
+.step:nth-child(3){--sc:var(--violet)}
+.step .n{display:block;font:500 .82rem/1 var(--mono);color:var(--sc,var(--cyan));margin-bottom:.7rem}
+.step h3{font-size:1.15rem;font-weight:600;margin-bottom:.5rem}
+.step p{color:var(--muted);font-size:.95rem}
+@media (max-width:820px){
+  .steps{grid-template-columns:1fr;gap:0}
+  .step{border-top:0;border-left:1px solid var(--line);padding:0 0 2rem 1.6rem}
+  .step::before{top:.3rem;left:-5px}
+  .step:last-child{padding-bottom:0}
+}
+
+/* ---------- Experience ---------- */
+.jobs{margin-top:3rem}
+.job{display:grid;grid-template-columns:190px minmax(0,1fr);gap:1.5rem;padding-bottom:2.75rem}
+.job:last-child{padding-bottom:0}
+.when{font:500 .82rem/1.5 var(--mono);color:var(--muted);padding-top:.25rem}
+.when span{display:block;color:var(--muted);opacity:.85}
+.what{position:relative;padding-left:2rem;border-left:1px solid var(--line)}
+.what::before{content:"";position:absolute;left:-6px;top:.5rem;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan)}
+.job.current .what::before{background:var(--pop);border-color:var(--pop);box-shadow:0 0 14px color-mix(in srgb,var(--pop) 50%,transparent)}
+.what h3{font-size:1.25rem;font-weight:600}
+.org{color:var(--violet);font-weight:500;margin-top:.15rem}
+.bul{margin-top:.75rem;max-width:66ch}
+.bul li{position:relative;padding-left:1.1rem;margin-top:.4rem;color:var(--muted)}
+.bul li::before{content:"";position:absolute;left:0;top:.8em;width:6px;height:1px;background:var(--cyan)}
+@media (max-width:760px){
+  .job{grid-template-columns:1fr;gap:.6rem}
+  .when{padding-left:2rem}
+}
+
+/* ---------- Toolkit ---------- */
+.tool-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2.5rem 2.25rem;margin-top:3rem}
+.tool-groups h3{font-size:1.02rem;font-weight:600;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+.tool-groups .chips{margin-top:.9rem}
+.also{margin-top:2.5rem;color:var(--muted);max-width:52em}
+
+/* ---------- Background ---------- */
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem 2.5rem;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.edu .entry+.entry{margin-top:0}
+@media (max-width:760px){.edu{grid-template-columns:1fr}}
+.entry+.entry{margin-top:1.25rem}
+.entry b{display:block;font-weight:600}
+.entry .meta{display:block;font:400 .8rem/1.5 var(--mono);color:var(--muted);margin:.15rem 0 .35rem}
+.entry p{color:var(--muted);font-size:.95rem}
+
+/* ---------- Contact ---------- */
+.contact{background:var(--bg2);border-top:1px solid var(--line)}
+.contact-card{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);padding:clamp(28px,5vw,56px)}
+@media (max-width:860px){.contact-card{grid-template-columns:1fr}}
+.contact-card .btn{margin-top:1.75rem}
+.clist div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:1rem;padding:.9rem 0;border-top:1px solid var(--soft)}
+.clist div:last-child{border-bottom:1px solid var(--soft)}
+.clist dt{color:var(--muted);font-size:.9rem}
+.clist dd{overflow-wrap:anywhere}
+.clist a{text-decoration-color:var(--cyan);text-underline-offset:4px}
+.clist a:hover{color:var(--cyan)}
+
+/* ---------- Footer ---------- */
+.foot{border-top:1px solid var(--line);padding:1.75rem 0;color:var(--muted);font-size:.9rem}
+.foot .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem 2rem}
+.foot nav{display:flex;gap:1.5rem}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--text)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-userplus" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+      <symbol id="i-gamepad" viewBox="0 0 24 24"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Kia Anor, home">
+      <svg class="brand-mark" viewBox="0 0 26 26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="13" cy="13" r="10" stroke="var(--line)"/>
+        <circle cx="13" cy="13" r="4.5" stroke="var(--cyan)"/>
+        <circle cx="21.2" cy="9" r="2" fill="var(--pop)" stroke="none"/>
+      </svg>
+      Kia Anor
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Work with me</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Customer, community, and admin support you can hand off with confidence.</h1>
+      <p class="lede">Hi, I'm Kia, an Admin, Customer, and Support Specialist with 3+ years supporting remote teams in e-commerce, fintech, and Web3. I answer your customers, run your community, write your processes, and keep your team organized.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Work with me</a>
+        <a class="link-u" href="#services">See what I do</a>
+      </div>
+      <ul class="status">
+        <li><span class="dot" aria-hidden="true"></span>Open to Full-time, Part-time, and Contract work</li>
+        <li><span>Based in Calamba City, Philippines. Local time now: <span class="clock" id="clock">--:--</span> (UTC+8)</span></li>
+      </ul>
+    </div>
+
+    <div class="orbit-wrap">
+      <div class="orbit" id="orbit">
+        <svg class="rings" viewBox="0 0 100 100" aria-hidden="true">
+          <circle class="r-ticks" cx="50" cy="50" r="47.5"/>
+          <circle class="r-path" cx="50" cy="50" r="35"/>
+          <circle class="r-dash" cx="50" cy="50" r="23"/>
+          <line class="link on" x1="50" y1="50" x2="50" y2="15"/>
+          <line class="link" x1="50" y1="50" x2="50" y2="15"/>
+          <line class="link" x1="50" y1="50" x2="50" y2="15"/>
+          <line class="link" x1="50" y1="50" x2="50" y2="15"/>
+          <line class="link" x1="50" y1="50" x2="50" y2="15"/>
+          <line class="link" x1="50" y1="50" x2="50" y2="15"/>
+          <line class="link" x1="50" y1="50" x2="50" y2="15"/>
+        </svg>
+        <div class="core" aria-hidden="true">KA</div>
+
+        <button type="button" class="node" style="--i:0" data-target="svc-support" aria-pressed="true"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg></span><span class="lbl">Support</span></button>
+        <button type="button" class="node" style="--i:1" data-target="svc-community" aria-pressed="false"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span><span class="lbl">Community</span></button>
+        <button type="button" class="node" style="--i:2" data-target="svc-admin" aria-pressed="false"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-brief"/></svg></span><span class="lbl">Admin &amp; ops</span></button>
+        <button type="button" class="node" style="--i:3" data-target="svc-people" aria-pressed="false"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-userplus"/></svg></span><span class="lbl">Hiring</span></button>
+        <button type="button" class="node" style="--i:4" data-target="svc-process" aria-pressed="false"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg></span><span class="lbl">SOPs &amp; AI</span></button>
+        <button type="button" class="node" style="--i:5" data-target="svc-tech" aria-pressed="false"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-wrench"/></svg></span><span class="lbl">Tech support</span></button>
+        <button type="button" class="node" style="--i:6" data-target="svc-gaming" aria-pressed="false"><span class="ico"><svg class="i" aria-hidden="true"><use href="#i-gamepad"/></svg></span><span class="lbl">Gaming</span></button>
+      </div>
+
+      <div class="readout" id="readout" aria-live="polite">
+        <h3 id="ro-title">Customer and Technical Support</h3>
+        <p class="ro-desc" id="ro-desc">I specialize in customer and technical support for E-commerce, Blockchain, Web3, and Fintech. I support every customer with care, work within agreed SLAs, and keep CSAT at the center of everything I do.</p>
+        <p class="ro-proof" id="ro-proof" style="display:none"></p>
+        <a class="link-u ro-more" id="ro-more" href="#svc-support">Read the full service</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROOF ================= -->
+<section class="proof" aria-label="Results">
+  <div class="wrap proof-grid">
+    <div class="stat"><b>7,000+</b><p>Telegram members supported, plus 2,000+ on Discord, for an investor community.</p></div>
+    <div class="stat"><b>95%+</b><p>Customer satisfaction across 1,000+ support interactions a month.</p></div>
+    <div class="stat"><b>90%+</b><p>Wallet and process issues resolved on first contact.</p></div>
+    <div class="stat"><b>30+</b><p>SOPs written, which raised team efficiency by 25%.</p></div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section" id="services">
+  <div class="wrap split">
+    <div class="split-head">
+      <h2 class="h2">What I can take off your plate</h2>
+      <p class="sub">Hire me for one service or combine several. Each one comes from work I've already done for remote teams.</p>
+      <a class="btn" href="#contact">Work with me</a>
+    </div>
+
+    <div class="svc-list">
+      <article class="svc" id="svc-support">
+        <div class="ico"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg></div>
+        <div>
+          <h3>Customer and Technical Support</h3>
+          <p class="desc">I specialize in customer and technical support for E-commerce, Blockchain, Web3, and Fintech. I support every customer with care, work within agreed SLAs, and keep CSAT at the center of everything I do.</p>
+          <ul class="chips" aria-label="Tools"><li>Shopify</li><li>REDO</li><li>ShipStation</li><li>Odoo</li><li>Zendesk</li><li>Patch Messenger</li><li>Slack</li></ul>
+        </div>
+      </article>
+
+      <article class="svc" id="svc-community">
+        <div class="ico"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></div>
+        <div>
+          <h3>Community management</h3>
+          <p class="desc">Daily moderation and member support for Telegram and Discord communities. I post accurate updates, answer questions quickly, and keep communication open so members stay informed and trust the team.</p>
+          <ul class="chips" aria-label="Tools"><li>Telegram</li><li>Discord</li><li>WhatsApp</li><li>Viber</li></ul>
+        </div>
+      </article>
+
+      <article class="svc" id="svc-admin">
+        <div class="ico"><svg class="i" aria-hidden="true"><use href="#i-brief"/></svg></div>
+        <div>
+          <h3>Executive and Admin Support</h3>
+          <p class="desc">A hands-on operations lead for founders and small teams. I organize email, schedule appointments, coordinate across departments, delegate and follow up on tasks, supervise virtual assistants and contractors, and keep contracts and documents in order.</p>
+          <ul class="chips" aria-label="Tools"><li>Notion</li><li>Trello</li><li>Jira</li><li>Slack</li><li>Google Workspace</li><li>Microsoft Office</li></ul>
+        </div>
+      </article>
+
+      <article class="svc" id="svc-people">
+        <div class="ico"><svg class="i" aria-hidden="true"><use href="#i-userplus"/></svg></div>
+        <div>
+          <h3>Recruitment, Onboarding, Training, and Offboarding</h3>
+          <p class="desc">End-to-end hiring for remote roles: writing job descriptions, screening candidates, and running interviews. Then onboarding and training so new people get productive quickly, and offboarding when it's time.</p>
+          <ul class="chips" aria-label="Tools"><li>Google Workspace</li><li>Zoom</li><li>Notion</li><li>Slack</li><li>Discord</li></ul>
+        </div>
+      </article>
+
+      <article class="svc" id="svc-process">
+        <div class="ico"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg></div>
+        <div>
+          <h3>SOPs, Process Improvement, and AI Workflows</h3>
+          <p class="desc">I turn how your team actually works into clear documentation, then look for where it can be faster. I use ChatGPT and Claude to speed up research, drafting, and repetitive tasks.</p>
+          <ul class="chips" aria-label="Tools"><li>Notion</li><li>Google Docs</li><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Canva</li></ul>
+        </div>
+      </article>
+
+      <article class="svc" id="svc-tech">
+        <div class="ico"><svg class="i" aria-hidden="true"><use href="#i-wrench"/></svg></div>
+        <div>
+          <h3>Web3 and Blockchain Support</h3>
+          <p class="desc">Troubleshooting for products with crypto wallets and blockchain features: wallet connections, bridging, launchers, and activity feeds. I explain fixes in plain language and pass engineers well-documented cases.</p>
+          <ul class="chips" aria-label="Tools"><li>MetaMask</li><li>Safepal</li><li>Rabby</li><li>Ethereum</li><li>BSC</li><li>Solana</li><li>Base</li></ul>
+        </div>
+      </article>
+
+      <article class="svc" id="svc-gaming">
+        <div class="ico"><svg class="i" aria-hidden="true"><use href="#i-gamepad"/></svg></div>
+        <div>
+          <h3>Gaming Buddy and Game Tester</h3>
+          <p class="desc">A dependable partner for co-op and casual play, and a careful tester who reports bugs and confusing moments clearly. I've played since 2014, mainly on Steam, and can join crossplay-enabled games from PC to console. Hourly rates are open to discussion.</p>
+          <p class="sub-label">Platforms</p>
+          <ul class="chips" aria-label="Platforms"><li>Steam</li><li>PC to console crossplay</li><li>Discord</li></ul>
+          <p class="sub-label">Genres</p>
+          <ul class="chips" aria-label="Genres"><li>Survival</li><li>Co-op</li><li>Horror</li><li>FPS</li><li>MOBA</li></ul>
+          <p class="sub-label">Games I play</p>
+          <ul class="chips" aria-label="Games I play"><li>Warframe</li><li>No More Room in Hell 2</li><li>GTA V Online</li><li>Enshrouded</li><li>The Forest</li><li>Green Hell</li><li>and more</li></ul>
+          <p class="note">Other games can be discussed on request. Session times can be arranged, and I'm on Philippine time (UTC+8).</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="section process" id="process">
+  <div class="wrap">
+    <h2 class="h2">How we'd work together</h2>
+    <p class="sub">A simple, transparent process, so you always know what to expect at every stage.</p>
+    <ol class="steps">
+      <li class="step"><span class="n">01</span><h3>Discovery call</h3><p>We begin with a friendly conversation about your team, what you need support with, and what success looks like for you.</p></li>
+      <li class="step"><span class="n">02</span><h3>Rate agreement</h3><p>We talk through the scope and hours, then agree on a rate that feels fair and works well for both of us.</p></li>
+      <li class="step"><span class="n">03</span><h3>Contract signing</h3><p>We put everything in writing, including responsibilities, schedule, and expectations, so we both start with clarity and confidence.</p></li>
+      <li class="step"><span class="n">04</span><h3>Kickoff and support</h3><p>I get set up in your tools, begin the work, and keep you updated regularly so you always know where things stand.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <h2 class="h2">Where I've done this work</h2>
+    <p class="sub">My roles, and what changed because I was there.</p>
+
+    <ol class="jobs">
+      <li class="job current">
+        <div class="when">Dec 2023 to present<span>Part-time, remote</span></div>
+        <div class="what">
+          <h3>Community Moderator &amp; Tech Support</h3>
+          <p class="org">Steam Exchange Inc.</p>
+          <ul class="bul">
+            <li>Managed and supported 7,000+ Telegram and 2,000+ Discord members, giving the investor community accurate, timely updates.</li>
+            <li>Resolved 90%+ of wallet and process issues on first contact, which reduced escalations and improved investor satisfaction.</li>
+            <li>Kept communication transparent and proactive across channels, strengthening trust and long-term engagement.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when">Oct 2025 to Dec 2025<span>Contract, remote</span></div>
+        <div class="what">
+          <h3>Executive Admin Manager</h3>
+          <p class="org">Echelon X</p>
+          <ul class="bul">
+            <li>Led daily admin and operations, keeping Admin, Content Creation, Customer Service, and Data Research aligned.</li>
+            <li>Led the Admin Assistant team and supervised virtual assistants and project contractors, tracking productivity, quality, and delivery.</li>
+            <li>Ran recruitment from candidate screening through interviews, then onboarded and trained new contractors.</li>
+            <li>Developed and improved SOPs, workflows, onboarding and offboarding processes, contracts, and company documents. Supported a client project with hiring, job descriptions, client meetings, and customer service SOPs.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when">May 2025 to Oct 2025<span>Contract, remote</span></div>
+        <div class="what">
+          <h3>Customer Support, E-Commerce VA</h3>
+          <p class="org">Echelon X</p>
+          <ul class="bul">
+            <li>Handled 1,000+ customer interactions a month across two brand chats and one email channel, resolving returns, exchanges, and refunds with 95%+ satisfaction.</li>
+            <li>Wrote and maintained 30+ SOPs in Notion and Google Docs, raising team efficiency and consistency by 25%.</li>
+            <li>Escalated complex issues to internal teams through Slack, making resolution 15% faster.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when">Dec 2024 to Jun 2025<span>Part-time, remote</span></div>
+        <div class="what">
+          <h3>Community Moderator &amp; Tech Support</h3>
+          <p class="org">Tribally.Games</p>
+          <ul class="bul">
+            <li>Moderated and supported a 5,000+ member Discord community with an average response time under 2 hours.</li>
+            <li>Resolved complex issues with Web3 launchers, wallet connections, bridging, and activity feeds, reducing developer escalations by 25%.</li>
+            <li>Worked with engineers in Slack to streamline updates, cutting average handling time by 15%.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when">Feb 2020 to Nov 2020<span>Full-time, onsite</span></div>
+        <div class="what">
+          <h3>Customer Support Representative II</h3>
+          <p class="org">TeleTech Sta. Rosa</p>
+          <ul class="bul">
+            <li>Supported customers on a high-volume food delivery account.</li>
+            <li>Met response time and satisfaction targets.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when">Jan 2019 to Feb 2020<span>Part-time, onsite</span></div>
+        <div class="what">
+          <h3>English Teacher</h3>
+          <p class="org">E2 Phil</p>
+          <ul class="bul">
+            <li>Taught English weekly to 10+ Korean students aged 5 to 23.</li>
+            <li>Improved student test scores by 15% on average.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when">Jun 2018 to Dec 2023<span>Community leadership</span></div>
+        <div class="what">
+          <h3>SK Councilor</h3>
+          <p class="org">Sangguniang Barangay ng La Mesa</p>
+          <ul class="bul">
+            <li>Coordinated community projects and youth programs for 3,600+ constituents.</li>
+            <li>Managed budgets and streamlined documentation processes.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= TOOLKIT ================= -->
+<section class="section process" id="toolkit">
+  <div class="wrap">
+    <h2 class="h2">Tools I already use</h2>
+    <p class="sub">No training needed on the everyday stack, and I'm quick to pick up new tools.</p>
+
+    <div class="tool-groups">
+      <div>
+        <h3>Support and E-Commerce</h3>
+        <ul class="chips"><li>Shopify</li><li>REDO</li><li>ShipStation</li><li>Odoo</li><li>Zendesk</li><li>Patch Messenger</li><li>Rails support tickets</li></ul>
+      </div>
+      <div>
+        <h3>Projects and Documentation</h3>
+        <ul class="chips"><li>Notion</li><li>Trello</li><li>Jira</li><li>Google Workspace</li><li>Microsoft Office</li><li>Canva</li></ul>
+      </div>
+      <div>
+        <h3>Channels and Meetings</h3>
+        <ul class="chips"><li>Slack</li><li>Discord</li><li>Telegram</li><li>WhatsApp</li><li>Viber</li><li>Zoom</li></ul>
+      </div>
+      <div>
+        <h3>AI</h3>
+        <ul class="chips"><li>ChatGPT</li><li>Claude</li><li>Gemini</li></ul>
+      </div>
+      <div>
+        <h3>Web3 and Blockchains</h3>
+        <ul class="chips"><li>MetaMask</li><li>Safepal</li><li>Rabby</li><li>Ethereum</li><li>BSC</li><li>Solana</li><li>Base</li><li>Rails</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BACKGROUND ================= -->
+<section class="section" id="background">
+  <div class="wrap">
+    <h2 class="h2">Education</h2>
+    <div class="edu">
+      <div class="entry"><b>B.S. Computer Engineering</b><span class="meta">Colegio de San Juan de Letran, Calamba. 2018 to 2019</span></div>
+      <div class="entry"><b>Information Technology, Software Development</b><span class="meta">University of Makati. 2015 to 2017</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <div>
+        <h2 class="h2">Tell me what needs handling</h2>
+        <p class="sub">Send a short note about your team and what's taking up your time. I'll reply with how I can help and what working together would look like.</p>
+        <a class="btn" href="mailto:kiaworkproject@gmail.com?subject=Working%20together">Contact Me</a>
+      </div>
+      <dl class="clist">
+        <div><dt>Email</dt><dd><a href="mailto:kiaworkproject@gmail.com">kiaworkproject@gmail.com</a></dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/639667127925" target="_blank" rel="noopener">+63 966 712 7925</a></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/kristineanor" target="_blank" rel="noopener">linkedin.com/in/kristineanor</a></dd></div>
+        <div><dt>Location</dt><dd>Calamba City, Laguna, Philippines (UTC+8)</dd></div>
+        <div><dt>References</dt><dd>Available Upon Request</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; 2026 Kristine Anor</span>
+    <nav aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* Local time in Manila */
+  var clock = document.getElementById('clock');
+  function tick(){
+    try{
+      clock.textContent = new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Manila'}).format(new Date());
+    }catch(e){ clock.textContent = ''; }
+  }
+  tick(); setInterval(tick, 30000);
+
+  /* Faint star field (visible in dark theme only) */
+  var stars = document.getElementById('stars');
+  var frag = document.createDocumentFragment();
+  for(var s=0;s<48;s++){
+    var el = document.createElement('i');
+    el.style.left = (Math.random()*100).toFixed(2)+'%';
+    el.style.top = (Math.random()*100).toFixed(2)+'%';
+    el.style.opacity = (0.15 + Math.random()*0.55).toFixed(2);
+    if(Math.random()>0.8){ el.style.width = el.style.height = '3px'; }
+    frag.appendChild(el);
+  }
+  stars.appendChild(frag);
+
+  /* Orbit of services */
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var orbit = document.getElementById('orbit');
+  var nodes = Array.prototype.slice.call(orbit.querySelectorAll('.node'));
+  var links = Array.prototype.slice.call(orbit.querySelectorAll('.link'));
+  var N = nodes.length, R = 35;
+  var roTitle = document.getElementById('ro-title');
+  var roDesc = document.getElementById('ro-desc');
+  var roProof = document.getElementById('ro-proof');
+  var roMore = document.getElementById('ro-more');
+  var angle = 0, hovering = false, focused = false, holdUntil = 0, running = false, visible = true, last = 0;
+
+  function place(){
+    for(var i=0;i<N;i++){
+      var a = (angle + i*360/N - 90) * Math.PI/180;
+      var x = 50 + R*Math.cos(a), y = 50 + R*Math.sin(a);
+      nodes[i].style.left = x.toFixed(2)+'%';
+      nodes[i].style.top = y.toFixed(2)+'%';
+      links[i].setAttribute('x2', x.toFixed(2));
+      links[i].setAttribute('y2', y.toFixed(2));
+    }
+  }
+
+  function select(i){
+    for(var k=0;k<N;k++){
+      nodes[k].setAttribute('aria-pressed', k===i ? 'true' : 'false');
+      if(k===i){ links[k].classList.add('on'); } else { links[k].classList.remove('on'); }
+    }
+    var section = document.getElementById(nodes[i].getAttribute('data-target'));
+    if(!section) return;
+    roTitle.textContent = section.querySelector('h3').textContent;
+    roDesc.textContent = section.querySelector('.desc').textContent;
+    var pl = section.querySelector('.proof-line');
+    roProof.textContent = pl ? pl.textContent : '';
+    roProof.style.display = pl ? '' : 'none';
+    roMore.setAttribute('href', '#'+section.id);
+  }
+
+  function frame(t){
+    if(!running) return;
+    var dt = Math.min(50, t - last); last = t;
+    if(!hovering && !focused && t > holdUntil){ angle = (angle + dt*0.004) % 360; }
+    place();
+    requestAnimationFrame(frame);
+  }
+  function start(){ if(reduce || running || !visible) return; running = true; last = performance.now(); requestAnimationFrame(frame); }
+  function stop(){ running = false; }
+
+  nodes.forEach(function(n,i){
+    n.addEventListener('click', function(){ holdUntil = performance.now() + 6000; select(i); });
+    n.addEventListener('focus', function(){ select(i); });
+  });
+  orbit.addEventListener('pointerenter', function(){ hovering = true; });
+  orbit.addEventListener('pointerleave', function(){ hovering = false; });
+  orbit.addEventListener('focusin', function(){ focused = true; });
+  orbit.addEventListener('focusout', function(){ focused = false; });
+
+  place();
+  select(0);
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      visible = entries[0].isIntersecting;
+      if(visible){ start(); } else { stop(); }
+    }).observe(orbit);
+  }else{
+    start();
+  }
+})();
+</script>
+</body>
+</html>
